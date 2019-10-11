@@ -10,11 +10,10 @@ RUN apk add --no-cache \
         ffmpeg \
         mpv \
         openssl \
-    && pip3 install \
+    && pip3 install --upgrade \
         mps-youtube \
         youtube-dl \
-    && addgroup -g 1000 mpsyt \
-    && adduser -u 1000 -G mpsyt -s /bin/sh -D mpsyt
+    && adduser -u 1000 -s /bin/sh -D mpsyt
 
 USER mpsyt
 
