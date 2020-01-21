@@ -24,12 +24,6 @@ For instance:
 awk -F\: '/audio/{print $3}' /etc/group
 ```
 
-Here are some common audio GID values:
-
-* Debian based: `--group-add=29`
-* Arch Linux: `--group-add=92`
-* CentOS: `--group-add=63`
-
 
 ### Change the default sound device
 
