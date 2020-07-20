@@ -4,13 +4,9 @@ LABEL maintainer="Carlos Remuzzi <carlosremuzzi@gmail.com>"
 LABEL org.label-schema.vcs-url="https://github.com/cremuzzi/mpsyt"
 
 RUN apk add --no-cache \
-        alsa-lib \
-        alsa-utils \
-        alsaconf \
-        dbus \
         ffmpeg \
         mpv \
-        openssl \
+        pulseaudio \
     && pip3 install --upgrade \
         mps-youtube \
         youtube-dl \
