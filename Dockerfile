@@ -1,6 +1,7 @@
 FROM python:3.7-alpine3.10
 
 LABEL maintainer="Carlos Remuzzi <carlosremuzzi@gmail.com>"
+LABEL org.label-schema.vcs-url="https://github.com/cremuzzi/mpsyt"
 
 RUN apk add --no-cache \
         alsa-lib \
